@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.brand-logo {
+    height: 100%;
+    width: 100%;
+    
+    
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 2;
+    }
+.navbar-brand{
+    width: 100px;
+    height: 100%;
+   
+}
+.language-drop-down{
+    background: transparent;
+    border: none;
+    color: grey;
+    
+}
+.language-drop-down:focus{
+    outline: none;
+}
+.sign-button{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+.nav-items{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+   
+    
+    position: relative;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.dropdown-container{
+    border: 1px solid white;
+   padding: 0.2rem;
+   border-radius: 4px;
+  
+   background: rgba(0,0,0,0.4); 
+}
+.hero-bg-image-container{
+    height: 100%;
+    width: 100%;
+   
+}
+
+.hero-bg-image{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 8px solid #222;
+}
+.hero-bg-overlay{
+   position: absolute;
+   inset: 0;
+    width: 100%;
+    height: 80vh;
+    background: rgba(0,0,0,0.6);
+   z-index: 1;
+}
+.hero__card{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 3;
+}
+.hero-title{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.hero-subtitle,.hero-description{
+   font-weight: 400;
+   font-size: 1rem;
+}
+.email--input{
+    border: none;
+    background: transparent; 
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+}
+.email--label{
+    color: black;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: rgb(153,149,149);
+    transition: 0.5s;
+    
+}
+.email--form--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.form--container{
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    position: relative;
+   
+}
+.email--input:focus + .email--label{
+    top: 0.2rem;
+    font-size: 10px;
+}
+.email--input:not(:placeholder-shown).email-input:not(:focus) + .email-label{
+    top: 0.2rem;
+    font-size: 10px;
+}
+.email--input:focus-visible{
+    outline: none;
+}
+.submit{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+   letter-spacing: 1px;
+  
+}
+.feature{
+    border-bottom: 3px solid #222;
+    padding: 2rem 1rem;
+}
+.feature-title{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 10px 0;
+    text-align: center;
+}
+.feature-sub-title{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.feature-details{
+    text-align: center;
+}
+
+.feature-image-container{
+    width: 100%;
+    position: relative;
+}
+.feature-image{
+    width: 100%;
+}
+.feature-background-video-container{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+}
+.feature-background-video{
+    width: 100%;
+}
+.feature-2-poster-container{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    width: 70%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 1px solid rgba(182, 99, 99, 0.7);
+    border-radius: 10px;
+    height: 60px;
+    max-width: 26em;
+    padding: 0.25rem 0.6rem;
+
+}
+.poster-container{
+    width: 30%;
+}
+.poster-img{
+    width: 40px;
+    height: 40px;
+    
+}
+.poster-details{
+    width: 50%;
+    
+}
+
+.poster-details h4{
+    font-size: 13px;
+    font-weight: 600;
+}
+.poster-details h6{
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(63, 63,246);
+}
+.download-gif-container{
+    width: 20%;
+    height: 100%;
+    overflow-y: hidden;
+}
+.gif{
+    width: 100%;
+    height: 100%;
+}
+.feature-background-video-3-container{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 16%;
+    height: 100%;
+    max-width: 65%;
+    max-height: 54%;
+    z-index: -2;
+}
+.feature-image-3-container{
+    position: relative;
+    width: 100%;
+}
+
+.feature-3-image{
+    width: 100%;
+}
+.FAQ__accordian {
+    width: 100%;
+  }
+  .FAQ__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+    text-align: center;
+  }
+  
+  .FAQ__visible {
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .FAQ__visible > p {
+    margin: 1rem;
+  }
+  .FAQ__list__container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+  }
+  .FAQ__heading {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+  }
+  
+  .FAQ__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .FAQ__get__started__email{
+      text-align: center;
+      gap: 30px;
+  }
+  .FAQ__get__started__email.h3{
+      font-size: 18px;
+      font-weight: 400;
+      margin: 5rem 2rem;
+      gap: 10px;
+      text-align: center;
+  }
+  footer{
+      border-top: 8px solid #333;
+      padding: 2rem 2rem;
+      color: #757575;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     align-items: flex-start;
+  }
+  .footer__row__1>h4{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 50px; 
+
+  }
+  .footer__row__2 {
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0rem 3rem;
+  }
+  .footer__row__3 > .dropdown-container{
+      width: fit-content;
+      border: 1px solid #757575;
+      color: #757575;
+      margin-left: 50px;
+  }
+  .footer__row__4{
+    margin-left: 50px;
+  }
+@media (min-width:768px) {
+    .hero-bg-image-container{
+        height: 100vh;
+    }
+    .hero-bg-overlay{
+        height: 100vh;
+    }
+    .hero__card{
+        top: 40%;
+        left: 30%;
+        transform: translate(-20%,-20%);
+    }
+    .hero-title{
+        font-size: 3rem;
+    }
+    .hero-subtitle,.hero-description{
+        font-size: 1.3rem;
+    }
+    .feature{
+        padding: 0rem;
+    }
+    .feature-title{
+        font-size: 35px;
+    }
+    .feature-sub-title{
+        font-size: 20px;
+    }
+    .FAQ__title{
+        font-size: 20px;
+    }
+    .FAQ__heading{
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .FAQ__list{
+        padding: 1rem 5rem;
+    }
+    .FAQ__get__started__email{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(17%);
+    }
+}
+ @media(min-width:1024px){
+     .navbar{
+         padding: 2%,5%;
+     }
+     .navbar-brand{
+         width: 150px;
+     }
+     .signin{
+         padding: 10px 20px;
+         font-size: 18px;
+     }
+     .dropdown-container{
+         padding: 5px 5px;
+     }
+     .navbar-nav-items{
+         gap: 30px;
+     }
+     .hero__card{
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+     }
+     .form--container{
+         width: 80%;
+     }
+     .email--form--container{
+         flex-direction: row;
+         align-items: center;
+         gap: 1px;
+     }
+     .submit{
+         height: 50px;
+         border-radius: 0px;
+     }
+     .feature-details{
+         display: flex;
+         align-items: center;
+         text-align: left;
+         justify-content: space-between;
+         gap: 20px;
+         padding: 0 6rem;
+     }
+     .feature-image-container{
+         max-width: 600px;
+     }
+     .feature-title{
+         font-size: 50px;
+     }
+     .feature-sub-title{
+         font-size: 25px;
+     }
+    
+    .feature-two-details{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 6rem;
+    }
+    .feature-four-details{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 6rem;
+    }
+    .poster-img{
+        margin-left: 20%;
+    }
+    .title-container{
+        padding-right: 10%;
+    }
+    .FAQ__title{
+        font-size: 20px;
+    }
+    .FAQ__heading{
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .FAQ__list{
+        padding: 1rem 25rem;
+    }
+    .FAQ__get__started__email{
+        text-align: center;
+        gap: 30px;
+    }
+    footer{
+        padding: 2rem 25rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .footer__row__2 {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+      }
+    .footer__row__1,
+    .footer__row__3,
+    .footer__row__4{
+        align-self: flex-start;
+    }
+ }   
+
